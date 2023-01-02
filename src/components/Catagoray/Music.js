@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Restart from "./utlties/Restart";
 
 function Music() {
   const Data = [
@@ -59,6 +60,7 @@ function Music() {
   };
   return (
     <>
+      <Restart />
       <section
         className="grid justify-center items-center text-white"
         style={{
@@ -72,8 +74,15 @@ function Music() {
           }}
         >
           {showScore ? (
-            <div className="text-4xl">
-              You scored {score} out of {Data.length}
+            <div className="score text-white grid gap-4">
+              <h2 className="text-center text-5xl">
+                {score} out of {Data.length}
+              </h2>
+              <span className="text-4xl">
+                {score <= 2
+                  ? " You Need To Learn More"
+                  : "Did You Know Your Are Smart"}
+              </span>
             </div>
           ) : (
             <>
@@ -81,7 +90,7 @@ function Music() {
                 <div className="text-3xl">
                   <span>Question {currentQuestion + 1}</span>/{Data.length}
                 </div>
-                <div className="text-5xl mb-5">
+                <div className="text-5xl mb-5 question-text">
                   {Data[currentQuestion].questionText}
                 </div>
               </div>
@@ -91,7 +100,7 @@ function Music() {
                     onClick={() =>
                       handleAnswerOptionClick(answerOption.isCorrect)
                     }
-                    className="button-54 text-3xl"
+                    className="button-54 text-xl"
                   >
                     {answerOption.answerText}
                   </button>

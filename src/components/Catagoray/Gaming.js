@@ -1,42 +1,44 @@
 import React, { useState } from "react";
+import Restart from "./utlties/Restart";
 
 function Gaming() {
   const Data = [
     {
       questionText:
-        "In which decade was the American Institute of Electrical Engineers (AIEE) founded?",
+        "What is the largest ever prize pool for a gaming tournament?",
       answerOptions: [
-        { answerText: "1850s", isCorrect: false },
-        { answerText: "1880s", isCorrect: true },
-        { answerText: "1930s", isCorrect: false },
-        { answerText: "1950s", isCorrect: false },
+        { answerText: "$18.93 million", isCorrect: false },
+        { answerText: "$24.54 million", isCorrect: false },
+        { answerText: "$9.3 million", isCorrect: false },
+        { answerText: "$40.01 million", isCorrect: true },
       ],
     },
     {
-      questionText: "Who is CEO of Tesla?",
+      questionText: "What year was the first Super Smash Bros. released?",
       answerOptions: [
-        { answerText: "Jeff Bezos", isCorrect: false },
-        { answerText: "Elon Musk", isCorrect: true },
-        { answerText: "Bill Gates", isCorrect: false },
-        { answerText: "Tony Stark", isCorrect: false },
+        { answerText: "1998", isCorrect: false },
+        { answerText: "1997", isCorrect: false },
+        { answerText: "1999", isCorrect: true },
+        { answerText: "1993", isCorrect: false },
       ],
     },
     {
-      questionText: "The iPhone was created by which company?",
+      questionText:
+        "How many Donkey Kong games have been released in the Home console video game format?",
       answerOptions: [
-        { answerText: "Apple", isCorrect: true },
-        { answerText: "Intel", isCorrect: false },
-        { answerText: "Amazon", isCorrect: false },
-        { answerText: "Microsoft", isCorrect: false },
+        { answerText: "22", isCorrect: false },
+        { answerText: "14", isCorrect: true },
+        { answerText: "10", isCorrect: false },
+        { answerText: "31", isCorrect: false },
       ],
     },
     {
-      questionText: "How many Harry Potter books are there?",
+      questionText: "What is the strongest block you can find in Minecraft?",
       answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true },
+        { answerText: "Obsidian", isCorrect: true },
+        { answerText: "Diamond", isCorrect: false },
+        { answerText: "Ender chest", isCorrect: false },
+        { answerText: "Ancient debris", isCorrect: false },
       ],
     },
   ];
@@ -59,6 +61,7 @@ function Gaming() {
   };
   return (
     <>
+      <Restart />
       <section
         className="grid justify-center items-center text-white"
         style={{
@@ -72,8 +75,15 @@ function Gaming() {
           }}
         >
           {showScore ? (
-            <div className="text-4xl">
-              You scored {score} out of {Data.length}
+            <div className="score text-white grid gap-4">
+              <h2 className="text-center text-5xl">
+                {score} out of {Data.length}
+              </h2>
+              <span className="text-4xl">
+                {score <= 2
+                  ? " You Need To Learn More"
+                  : "Did You Know Your Are Smart"}
+              </span>
             </div>
           ) : (
             <>
@@ -81,7 +91,7 @@ function Gaming() {
                 <div className="text-3xl">
                   <span>Question {currentQuestion + 1}</span>/{Data.length}
                 </div>
-                <div className="text-5xl mb-5">
+                <div className="text-5xl mb-5 question-text">
                   {Data[currentQuestion].questionText}
                 </div>
               </div>
@@ -91,7 +101,7 @@ function Gaming() {
                     onClick={() =>
                       handleAnswerOptionClick(answerOption.isCorrect)
                     }
-                    className="button-54 text-3xl"
+                    className="button-54 text-xl"
                   >
                     {answerOption.answerText}
                   </button>

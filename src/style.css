@@ -1,25 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anybody&display=swap");
+
+* {
+  border: none;
+  outline: none;
+}
 
 body {
+  background: url("./Fluid-10s-1536px.svg") no-repeat !important;
   background-color: #3f4c76 !important;
-
+  background-blend-mode: multiply;
+  overflow: hidden !important;
+  font-family: "Anybody", cursive !important;
 }
-* {
-  font-family: 'Kanit', sans-serif !important;
+
+button,
+div {
+  font-family: "Andika", sans-serif !important;
 }
 
-@media screen and (max-width:756px) {
+.cat-container:hover * {
+  color: #3e92cc;
+}
 
-.catagoray-sec {
+.me :hover {
+  color: #3e92cc;
+}
+
+.cat-container {
+  color: #f4d6cc !important;
+  background-color: #32373b !important;
+}
+.cat-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+@media screen and (max-width: 756px) {
+ body{
+  background: url("./Fluid-10s-1536px.svg") no-repeat top !important;
+  background-color: #3f4c76 !important;
+  background-blend-mode: multiply !important;
+ }
+  .score {
+    font-size: 1.6rem;
+  }
+
+  .text-sm-w {
+    font-size: 2.3rem;
+  }
+  .catagoray-sec {
     grid-template-columns: auto auto;
   }
-.catagoray-sec div {
-  width: 190px !important;
+
+  .catagoray-sec div {
+    width: 185px !important;
+  }
+
+  .question-text {
+    font-size: 1.8rem !important;
+  }
 }
-}
+
 /* CSS */
 .button-54 {
   font-family: "Open Sans", sans-serif;
@@ -31,7 +76,8 @@ body {
   cursor: pointer;
   border: 3px solid;
   padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
   position: relative;
   user-select: none;
   -webkit-user-select: none;

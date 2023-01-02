@@ -9,37 +9,37 @@ function Catagoray() {
       <h3 className="text-3xl"> Choose The Catagoray</h3>
       <div className="grid gap-4 grid-cols-3 text-black catagoray-sec items-center justify-center">
         <Link to="music">
-          <div className="bg-white h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl">
+          <div className=" h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl cat-container">
             <BsMusicNoteList />
             Music
           </div>
         </Link>
         <Link to="bollywood">
-          <div className="bg-white h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl">
+          <div className=" h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl cat-container">
             <SlCamrecorder />
             Bollywood
           </div>
         </Link>
         <Link to="technology">
-          <div className="bg-white h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl">
+          <div className="h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl cat-container">
             <MdLaptopWindows />
             Technology
           </div>
         </Link>
         <Link to="sport">
-          <div className="bg-white h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl">
+          <div className="h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl cat-container">
             <MdOutlineSportsCricket />
             Sport
           </div>
         </Link>
         <Link to="geography">
-          <div className="bg-white h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl">
+          <div className=" h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl cat-container">
             <BsGeoAlt />
             Geography
           </div>
         </Link>
         <Link to="gaming">
-          <div className="bg-white h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl">
+          <div className="h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl cat-container">
             <BsController />
             Gaming
           </div>
