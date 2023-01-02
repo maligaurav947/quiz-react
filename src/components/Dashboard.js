@@ -4,14 +4,7 @@ import Catagoray from "./Catagoray";
 function Dashboard() {
   return (
     <>
-      <section
-        className=" text-white"
-        style={{
-          height: "100vh",
-          width: "100vw",
-          backgroundColor: "#3f4c76",
-        }}
-      >
+      <section className=" text-white">
         <main
           className="text-center grid justify-center items-center"
           style={{

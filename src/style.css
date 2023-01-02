@@ -3,46 +3,19 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;600&display=swap');
 
-* {
+body {
+  background-color: #3f4c76 !important;
 
+}
+* {
   font-family: 'Kanit', sans-serif !important;
 }
+@media screen and (max-width:756px) {
 
-.bn632-hover {
-  width: auto;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  cursor: pointer;
-  margin: 20px;
-  height: 55px;
-  text-align: center;
-  border: none;
-  background-size: 300% 100%;
-  border-radius: 50px;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+.catagoray-sec {
+    grid-template-columns: auto auto;
+  }
+.catagoray-sec div {
+  width: 190px !important;
 }
-
-.bn632-hover:hover {
-  background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-}
-
-.bn632-hover:focus {
-  outline: none;
-}
-
-.bn632-hover.bn25 {
-  background-image: linear-gradient(to right,
-      #29323c,
-      #485563,
-      #2b5876,
-      #4e4376);
-  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
