@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BsMusicNoteList, BsGeoAlt, BsController } from "react-icons/bs";
 import { MdOutlineSportsCricket, MdLaptopWindows } from "react-icons/md";
 import { SlCamrecorder } from "react-icons/sl";

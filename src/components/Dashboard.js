@@ -1,9 +1,8 @@
 import React from "react";
-
 import Catagoray from "./Catagoray";
 import { Link } from "react-router-dom";
 import { RiFeedbackLine } from "react-icons/ri";
-import Feedback from "./Catagoray/utlties/Feedback";
+
 function Dashboard() {
   return (
     <>
