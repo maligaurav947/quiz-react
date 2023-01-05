@@ -8,7 +8,7 @@ A Simple React Quiz App which contains the 4 MCQ’s which have 4 options in eac
 ## Demo
 
 See it Live [HERE](https://maligaurav947.github.io/quiz-react/) 
-
+https://github.com/maligaurav947/Portfolio/blob/master/src/reso/Screenshot%202023-01-03%20002533.png?raw=true
 
 ## Version
 
