@@ -4,40 +4,42 @@ import Restart from "./utlties/Restart";
 function Sport() {
   const Data = [
     {
+      questionText: "Grand Slam is used in which of the following games?",
+      answerOptions: [
+        { answerText: "Lawn Tennis", isCorrect: true },
+        { answerText: "Football", isCorrect: false },
+        { answerText: "Badminton", isCorrect: false },
+        { answerText: "none of the above", isCorrect: false },
+      ],
+    },
+    {
       questionText:
-        "In which decade was the American Institute of Electrical Engineers (AIEE) founded?",
+        "Jules Rimet Trophy is related to which of the following sports?",
       answerOptions: [
-        { answerText: "1850s", isCorrect: false },
-        { answerText: "1880s", isCorrect: true },
-        { answerText: "1930s", isCorrect: false },
-        { answerText: "1950s", isCorrect: false },
+        { answerText: "Hockey", isCorrect: false },
+        { answerText: "Cricket", isCorrect: false },
+        { answerText: "Football", isCorrect: true },
+        { answerText: "Volley ball", isCorrect: false },
       ],
     },
     {
-      questionText: "Who is CEO of Tesla?",
+      questionText:
+        "Murugappa Gold Cup is related to which among the following sports?",
       answerOptions: [
-        { answerText: "Jeff Bezos", isCorrect: false },
-        { answerText: "Elon Musk", isCorrect: true },
-        { answerText: "Bill Gates", isCorrect: false },
-        { answerText: "Tony Stark", isCorrect: false },
+        { answerText: "Football", isCorrect: false },
+        { answerText: "Hockey", isCorrect: true },
+        { answerText: "Cricket", isCorrect: false },
+        { answerText: "Table Tennis", isCorrect: false },
       ],
     },
     {
-      questionText: "The iPhone was created by which company?",
+      questionText:
+        "Where are the headquarters of Swimming Federation of India?",
       answerOptions: [
-        { answerText: "Apple", isCorrect: true },
-        { answerText: "Intel", isCorrect: false },
-        { answerText: "Amazon", isCorrect: false },
-        { answerText: "Microsoft", isCorrect: false },
-      ],
-    },
-    {
-      questionText: "How many Harry Potter books are there?",
-      answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true },
+        { answerText: "Kolkata", isCorrect: false },
+        { answerText: "Ahmedabad", isCorrect: true },
+        { answerText: "Chandigarh", isCorrect: false },
+        { answerText: "New Delhi", isCorrect: false },
       ],
     },
   ];
@@ -90,11 +92,11 @@ function Sport() {
                 <div className="text-3xl">
                   <span>Question {currentQuestion + 1}</span>/{Data.length}
                 </div>
-                <div className="text-5xl mb-5 question-text">
+                <div className="text-5xl mt-3 question-text">
                   {Data[currentQuestion].questionText}
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 mt-10 gap-4">
                 {Data[currentQuestion].answerOptions.map((answerOption) => (
                   <button
                     onClick={() =>

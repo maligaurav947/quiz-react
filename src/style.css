@@ -11,9 +11,9 @@
 }
 
 body {
-  background: url("./Fluid-10s-1536px.svg") no-repeat !important;
-  background-color: #3f4c76 !important;
-  background-blend-mode: multiply;
+  /* background: url("./Fluid-10s-1536px.svg") no-repeat !important; */
+  background-color: #111827 !important;
+  /* background-blend-mode: multiply; */
   overflow: hidden !important;
   font-family: "Anybody", cursive !important;
 }
@@ -40,11 +40,10 @@ div {
 }
 
 @media screen and (max-width: 756px) {
- body{
-  background: url("./Fluid-10s-1536px.svg") no-repeat top !important;
-  background-color: #3f4c76 !important;
-  background-blend-mode: multiply !important;
- }
+p,span{
+  margin: 0 auto !important;
+  text-align: center !important;
+}
   .score {
     font-size: 1.6rem;
   }

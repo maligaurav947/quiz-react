@@ -5,39 +5,42 @@ function Music() {
   const Data = [
     {
       questionText:
-        "In which decade was the American Institute of Electrical Engineers (AIEE) founded?",
+        "The interval between two ‘Shruties’, as compared to the interval between two ‘Swaras’ is ",
       answerOptions: [
-        { answerText: "1850s", isCorrect: false },
-        { answerText: "1880s", isCorrect: true },
-        { answerText: "1930s", isCorrect: false },
-        { answerText: "1950s", isCorrect: false },
+        { answerText: "More", isCorrect: false },
+        { answerText: "Less", isCorrect: true },
+        { answerText: "Equal", isCorrect: false },
+        { answerText: "None of the above", isCorrect: false },
       ],
     },
     {
-      questionText: "Who is CEO of Tesla?",
+      questionText:
+        "A musical scale contains how many shruties according to the ancient scholars?",
       answerOptions: [
-        { answerText: "Jeff Bezos", isCorrect: false },
-        { answerText: "Elon Musk", isCorrect: true },
-        { answerText: "Bill Gates", isCorrect: false },
-        { answerText: "Tony Stark", isCorrect: false },
+        { answerText: "20", isCorrect: false },
+        { answerText: "24", isCorrect: false },
+        { answerText: "22", isCorrect: true },
+        { answerText: "21", isCorrect: false },
       ],
     },
     {
-      questionText: "The iPhone was created by which company?",
+      questionText:
+        "A special method of presenting ‘alap’ in the ancient times is known by which of the following name?",
       answerOptions: [
-        { answerText: "Apple", isCorrect: true },
-        { answerText: "Intel", isCorrect: false },
-        { answerText: "Amazon", isCorrect: false },
-        { answerText: "Microsoft", isCorrect: false },
+        { answerText: "Sargam", isCorrect: false },
+        { answerText: "Ragmala", isCorrect: false },
+        { answerText: "Sadra", isCorrect: false },
+        { answerText: "Swasthan", isCorrect: true },
       ],
     },
     {
-      questionText: "How many Harry Potter books are there?",
+      questionText:
+        "Tabla player, who composed music for films as A.R. Qureshee?",
       answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true },
+        { answerText: "UstadAllarakha", isCorrect: true },
+        { answerText: "Ustad Abdul Kareem", isCorrect: false },
+        { answerText: "UstadAhmedjanThirkawa", isCorrect: false },
+        { answerText: "UstadAmeerHussain", isCorrect: false },
       ],
     },
   ];
@@ -90,11 +93,11 @@ function Music() {
                 <div className="text-3xl">
                   <span>Question {currentQuestion + 1}</span>/{Data.length}
                 </div>
-                <div className="text-5xl mb-5 question-text">
+                <div className="text-5xl mt-3 question-text">
                   {Data[currentQuestion].questionText}
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 mt-10 gap-4">
                 {Data[currentQuestion].answerOptions.map((answerOption) => (
                   <button
                     onClick={() =>

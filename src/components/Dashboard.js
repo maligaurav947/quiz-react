@@ -15,7 +15,7 @@ function Dashboard() {
         >
           <div className="grid gap-20">
             <h1 className="text-7xl font-semibold text-sm-w">
-              LETS START QUIZE
+              LETS START QUIZ
             </h1>
             <Catagoray />
           </div>

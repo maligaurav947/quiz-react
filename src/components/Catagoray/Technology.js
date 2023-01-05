@@ -32,12 +32,12 @@ function Technology() {
       ],
     },
     {
-      questionText: "How many Harry Potter books are there?",
+      questionText: "'.MOV' extension refers usually to what kind of file?",
       answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true },
+        { answerText: "Image file", isCorrect: false },
+        { answerText: "Animation/movie file", isCorrect: true },
+        { answerText: "Audio file", isCorrect: false },
+        { answerText: "MS Office document", isCorrect: false },
       ],
     },
   ];
@@ -90,11 +90,11 @@ function Technology() {
                 <div className="text-3xl">
                   <span>Question {currentQuestion + 1}</span>/{Data.length}
                 </div>
-                <div className="text-5xl mb-5 question-text">
+                <div className="text-5xl mt-3 question-text">
                   {Data[currentQuestion].questionText}
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 mt-10 gap-4">
                 {Data[currentQuestion].answerOptions.map((answerOption) => (
                   <button
                     onClick={() =>

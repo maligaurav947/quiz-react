@@ -5,39 +5,41 @@ function Geography() {
   const Data = [
     {
       questionText:
-        "In which decade was the American Institute of Electrical Engineers (AIEE) founded?",
+        "With which of the following countries of South East Asia, India shares a maritime boundary?",
       answerOptions: [
-        { answerText: "1850s", isCorrect: false },
-        { answerText: "1880s", isCorrect: true },
-        { answerText: "1930s", isCorrect: false },
-        { answerText: "1950s", isCorrect: false },
+        { answerText: "Indonesia", isCorrect: true },
+        { answerText: "Malaysia", isCorrect: false },
+        { answerText: "Singapore", isCorrect: false },
+        { answerText: "Vietnam", isCorrect: false },
       ],
     },
     {
-      questionText: "Who is CEO of Tesla?",
+      questionText: "In which state Talchar thermal power plant is located?",
       answerOptions: [
-        { answerText: "Jeff Bezos", isCorrect: false },
-        { answerText: "Elon Musk", isCorrect: true },
-        { answerText: "Bill Gates", isCorrect: false },
-        { answerText: "Tony Stark", isCorrect: false },
+        { answerText: "Karnataka", isCorrect: false },
+        { answerText: "Odisha", isCorrect: true },
+        { answerText: "West Bengal", isCorrect: false },
+        { answerText: "Himachal Pradesh", isCorrect: false },
       ],
     },
     {
-      questionText: "The iPhone was created by which company?",
+      questionText:
+        "The place “Noonmati” in India, is related to which among the following?",
       answerOptions: [
-        { answerText: "Apple", isCorrect: true },
-        { answerText: "Intel", isCorrect: false },
-        { answerText: "Amazon", isCorrect: false },
-        { answerText: "Microsoft", isCorrect: false },
+        { answerText: "Salt Industry", isCorrect: false },
+        { answerText: "Petroleum Industry", isCorrect: true },
+        { answerText: "Paper Industry", isCorrect: false },
+        { answerText: "Textile Industry", isCorrect: false },
       ],
     },
     {
-      questionText: "How many Harry Potter books are there?",
+      questionText:
+        "The India-Myanmar Friendship Road connects which among the following states of India with Myanmar?",
       answerOptions: [
-        { answerText: "1", isCorrect: false },
-        { answerText: "4", isCorrect: false },
-        { answerText: "6", isCorrect: false },
-        { answerText: "7", isCorrect: true },
+        { answerText: "Assam", isCorrect: false },
+        { answerText: "Manipur", isCorrect: true },
+        { answerText: "Meghalaya", isCorrect: false },
+        { answerText: "Nagaland", isCorrect: false },
       ],
     },
   ];
@@ -90,11 +92,11 @@ function Geography() {
                 <div className="text-3xl">
                   <span>Question {currentQuestion + 1}</span>/{Data.length}
                 </div>
-                <div className="text-5xl mb-5 question-text">
+                <div className="text-5xl mt-3 question-text">
                   {Data[currentQuestion].questionText}
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 mt-10 gap-4">
                 {Data[currentQuestion].answerOptions.map((answerOption) => (
                   <button
                     onClick={() =>
