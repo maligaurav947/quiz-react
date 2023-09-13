@@ -8,11 +8,13 @@ import Technology from "./components/Catagoray/Technology";
 import Feedback from "./components/Catagoray/utlties/Feedback";
 import Dashboard from "./components/Dashboard";
 
+
 function App() {
   return (
     <HashRouter>
       <Routes>
         <Route index element={<Dashboard />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/feedback" element={<Feedback />} />
         <Route path="/sport" element={<Sport />} />
         <Route path="/music" element={<Music />} />

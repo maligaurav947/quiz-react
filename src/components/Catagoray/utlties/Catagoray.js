@@ -7,7 +7,7 @@ function Catagoray() {
   return (
     <div className="grid items-center justify-center gap-5">
       <h3 className="text-3xl"> Choose The Catagoray</h3>
-      <div className="grid gap-4 grid-cols-3 text-black catagoray-sec items-center justify-center">
+      <div className="grid gap-4 grid-cols-3 text-black catagoray-sec items-center justify-center ">
         <Link to="music">
           <div className=" h-16 w-52 rounded-xl flex gap-2 items-center justify-center text-2xl cat-container">
             <BsMusicNoteList />

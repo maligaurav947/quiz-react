@@ -33,7 +33,6 @@ div {
 
 .cat-container {
   color: #f4d6cc !important;
-  background-color: #32373b !important;
 }
 .cat-container:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
@@ -92,5 +91,27 @@ p,span{
 @media (min-width: 768px) {
   .button-54 {
     padding: 0.25em 0.75em;
+  }
+}
+
+.gradient {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+  background-size: 180% 180%;
+  animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }
